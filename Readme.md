@@ -14,8 +14,8 @@ Utiliza la biblioteca **threading** para ejecutar algunas operaciones en hilos s
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu-proyecto.git
-   cd tu-proyecto
+   git clone https://github.com/ZeroK06/paralelos.git
+   cd paralelos
    ```
 2. Instalación de librerías necesarias:
    ```bash
