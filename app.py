@@ -1,11 +1,14 @@
 from mysql import connector
 import threading
 from prettytable import from_db_cursor, PrettyTable
+import os
 
 
 DB_QUERY = connector.connect(
     host="localhost", user="root", password="", database="escuela"
 )
+
+clear = lambda: os.system("cls")
 
 
 def ordenar_por_nota(estudiantes):
@@ -152,7 +155,7 @@ def main():
         print("6. Ordenar por carnet")
         print("7. Exit")
         choice = input("Ingresa un opción: ")
-
+        clear()
         if choice in options:
             t = threading.Thread(target=options[choice])
             t.start()
